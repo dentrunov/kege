@@ -1,0 +1,9 @@
+.navbar{
+    background-color: blue;
+}
+.navbar-brand {
+    font-weight: bold;
+    font-size: 3.5vh;
+}
+main {height: auto;
+min-height: 500px;}
