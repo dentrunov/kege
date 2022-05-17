@@ -49,9 +49,82 @@
   </nav>
   <main class="container-fluid">
     <div class="row">
-      <div class="col col-sm-0">11</div>
-      <div class="col-7 col-sm-12">34</div>
-      <div class="col-4 col-sm-0">45</div>
+      <div class="col-xl col-sm mn">
+        <ul>
+          <li id="litiup" style="background-color: aliceblue;">
+            <span id="tiup">&#8593</span>
+          </li>
+        </ul>
+        <div id="tasks">
+          <ul>
+            <li class="liti" id="tii" onclick="butcklick(0)"><span>i</span></li>
+            <li class="liti" onclick="butcklick(1)"><span>1</span></li>
+            <li class="liti" onclick="butcklick(2)"><span>2</span></li>
+            <li class="liti" onclick="butcklick(3)"><span>3</span></li>
+            <li class="liti" onclick="butcklick(4)"><span>4</span></li>
+            <li class="liti" onclick="butcklick(5)"><span>5</span></li>
+            <li class="liti" onclick="butcklick(6)"><span>6</span></li>
+            <li class="liti" onclick="butcklick(7)"><span>7</span></li>
+            <li class="liti" onclick="butcklick(8)"><span>8</span></li>
+            <li class="liti" onclick="butcklick(9)"><span>9</span></li>
+            <li class="liti" onclick="butcklick(10)"><span>10</span></li>
+            <li class="liti" onclick="butcklick(11)"><span>11</span></li>
+            <li class="liti" onclick="butcklick(12)"><span>12</span></li>
+            <li class="liti" onclick="butcklick(13)"><span>13</span></li>
+            <li class="liti" onclick="butcklick(14)"><span>14</span></li>
+            <li class="liti" onclick="butcklick(15)"><span>15</span></li>
+            <li class="liti" onclick="butcklick(16)"><span>16</span></li>
+            <li class="liti" onclick="butcklick(17)"><span>17</span></li>
+            <li class="liti" onclick="butcklick(18)"><span>18</span></li>
+            <li class="liti" onclick="butcklick(19)"><span>19</span></li>
+            <li class="liti" onclick="butcklick(20)"><span>20</span></li>
+            <li class="liti" onclick="butcklick(21)"><span>21</span></li>
+            <li class="liti" onclick="butcklick(22)"><span>22</span></li>
+            <li class="liti" onclick="butcklick(23)"><span>23</span></li>
+            <li class="liti" onclick="butcklick(24)"><span>24</span></li>
+            <li class="liti" onclick="butcklick(25)"><span>25</span></li>
+            <li class="liti" onclick="butcklick(26)"><span>26</span></li>
+            <li class="liti" onclick="butcklick(27)"><span>27</span></li>
+
+          </ul>
+        </div>
+        <ul>
+          <li id="litidn"><span id="tidn">&#8595</span></li>
+        </ul>
+      </div>
+      <div class="col-xl-8 col-sm-12" id="taskfield">
+        <div class="task-content">
+          <div class="slide" style="display:block">
+        <p>1. Обозначения для логических связок (операций):</p>
+        <p>a) отрицание (инверсия, логическое НЕ) обозначается ¬ (например, ¬А);</p>
+        <p>b) конъюнкция (логическое умножение, логическое И) обозначается /\
+          (например, А /\ В) либо & (например, А & В);</p>
+        <p>c) дизъюнкция (логическое сложение, логическое ИЛИ) обозначается \/
+          (например, А \/ В) либо | (например, А | В);</p>
+        <p>d) следование (импликация) обозначается → (например, А → В);</p>
+        <p>e) тождество обозначается ≡ (например, A ≡ B); выражение A ≡ B истинно
+          тогда и т олько т огда, к огда з начения A и B с овпадают ( либо о ни о ба
+          истинны, либо они оба ложны);</p>
+        <p>f) символ 1 используется для обозначения истины (истинного высказывания);
+          символ 0 – для обозначения лжи (ложного высказывания).</p>
+        <p>2. Два логических выражения, содержащие переменные, называются
+          равносильными (эквивалентными), если значения этих выражений совпадают
+          при любых значениях переменных. Так, выражения А → В и (¬А) \/ В
+          равносильны, а А \/ В и А /\ В неравносильны (значения выражений разные,
+          например, при А = 1, В = 0).</p>
+        <p>3. Приоритеты логических операций: инверсия (отрицание), конъюнкция
+          (логическое умножение), дизъюнкция (логическое сложение), импликация
+          (следование), тождество. Таким образом, ¬А /\ В \/ С /\ D означает то же, что
+          и ((¬А) /\ В) \/ (С /\ D).</p>
+        Возможна запись А /\ В /\ С вместо (А /\ В) /\ С. То же относится
+        и к дизъюнкции: возможна запись А \/ В \/ С вместо (А \/ В) \/ С.</p>
+        <p>4. Обозначения Мбайт и Кбайт используются в традиционном для информа-
+          тики смысле – как обозначения единиц измерения, соотношение которых
+          с единицей «байт» выражается степенью двойки.</p>
+        </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-sm-0">45</div>
     </div>
   </main>
   <footer class="container-fluid fixed-bottom">

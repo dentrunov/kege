@@ -1,36 +1,112 @@
 body {
     background-color: aliceblue;
 }
-.navbar{
+
+.navbar {
     background-color: navy;
     height: auto;
 }
+
 .navbar-brand {
     font-weight: bold;
     font-size: 20pt;
 }
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgb(255, 255, 255)
+}
+
+dropdown-menu,
+show {
+    background-color: #EEEEEE;
+}
+
 main {
     height: auto;
-    min-height: 500px;
+    max-height: 500px;
     background-color: aliceblue;
     margin-top: 10vh;
 }
-.navbar-dark .navbar-nav .nav-link{
-    color:rgb(255,255,255)
+
+.mn {
+    margin-bottom: 90px;
+    height: 80vh;
 }
-dropdown-menu, show {
-    background-color: #EEEEEE; 
+
+#tasks {
+    overflow-y: scroll;
+    height: auto;
+    height: 70vh;
 }
-footer {background-color: navy;
-height: 100px;
-width: 100%;}
+
+#tasks::-webkit-scrollbar {
+    width: 0px;
+
+}
+
+.liti,
+#litiup,
+#litidn {
+    display: list-item;
+    font-weight: bold;
+    list-style-type: none;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    width: 30px;
+    border: 1px transparent solid;
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 6px;
+    font-size: 12pt;
+    box-shadow: 0 2px 6px rgb(0 0 0 / 15%);
+    text-align: center;
+    font-size: 14px;
+}
+
+#litiup,
+#litidn {
+    background-color: navy;
+    color: #FFF;
+}
+
+#tii {
+    background-color: navy;
+    color: #FFF;
+}
+
+.liti {
+    color: black;
+    background-color: antiquewhite;
+}
+
+#taskfield {
+    overflow-y: scroll;
+}
+.task-content {
+            margin: 10px 50px;
+            height: auto
+        }
+.slide p {
+    font-size: 14pt;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+footer {
+    background-color: navy;
+    height: 100px;
+    width: 100%;
+}
 
 
-@media only screen  and (min-width: 220px) and (max-width: 1000px){
-    .navbar-brand { font-size: 12pt;
-    }   
+@media only screen and (min-width: 220px) and (max-width: 1000px) {
+    .navbar-brand {
+        font-size: 12pt;
+    }
 
-    footer  {
+    footer {
         position: relative;
     }
 }
