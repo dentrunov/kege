@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Эмулятор КЕГЭ по информатике</title>
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/testscript.js"></script>
+</head>
+
+<body>
+	<nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+		<div class="container-fluid">
+			<a class="navbar-brand ml-auto" href="#">Эмулятор КЕГЭ по информатике</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse collapse justify-content-end" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="#">На главную</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+							data-bs-toggle="dropdown" aria-expanded="false">
+							Личный кабинет
+						</a>
+						<ul class="dropdown-menu mr-auto" aria-labelledby="navbarDropdown">
+							<li><a class="dropdown-item" href="#">Ученик</a></li>
+							<li><a class="dropdown-item" href="#">Родитель</a></li>
+							<li><a class="dropdown-item" href="#">Учитель</a></li>
+						</ul>
+					</li>
+
+
+					<li class="nav-item">
+						<a class="nav-link active" href="#">Завершить</a>
+					</li>
+					<span class="navbar-text">Оставшееся время - </span><span class="navbar-text"
+						style="color:red">3:55:00</span>
+					</li>
+
+
+			</div>
+		</div>
+	</nav>
+	<main class="container-fluid">
+		<div class="row">
+			<div class="col-xl col-sm mn">
+				<ul>
+					<li id="litiup" style="background-color: aliceblue;">
+						<span id="tiup">&#8593</span>
+					</li>
+				</ul>
+				<div id="tasks">
+					<ul>
+						<li class="liti" id="tii" onclick="butcklick(0)"><span>i</span></li>
+						<li class="liti" onclick="butcklick(1)"><span>1</span></li>
+						<li class="liti" onclick="butcklick(2)"><span>2</span></li>
+						<li class="liti" onclick="butcklick(3)"><span>3</span></li>
+						<li class="liti" onclick="butcklick(4)"><span>4</span></li>
+						<li class="liti" onclick="butcklick(5)"><span>5</span></li>
+						<li class="liti" onclick="butcklick(6)"><span>6</span></li>
+						<li class="liti" onclick="butcklick(7)"><span>7</span></li>
+						<li class="liti" onclick="butcklick(8)"><span>8</span></li>
+						<li class="liti" onclick="butcklick(9)"><span>9</span></li>
+						<li class="liti" onclick="butcklick(10)"><span>10</span></li>
+						<li class="liti" onclick="butcklick(11)"><span>11</span></li>
+						<li class="liti" onclick="butcklick(12)"><span>12</span></li>
+						<li class="liti" onclick="butcklick(13)"><span>13</span></li>
+						<li class="liti" onclick="butcklick(14)"><span>14</span></li>
+						<li class="liti" onclick="butcklick(15)"><span>15</span></li>
+						<li class="liti" onclick="butcklick(16)"><span>16</span></li>
+						<li class="liti" onclick="butcklick(17)"><span>17</span></li>
+						<li class="liti" onclick="butcklick(18)"><span>18</span></li>
+						<li class="liti" onclick="butcklick(19)"><span>19</span></li>
+						<li class="liti" onclick="butcklick(20)"><span>20</span></li>
+						<li class="liti" onclick="butcklick(21)"><span>21</span></li>
+						<li class="liti" onclick="butcklick(22)"><span>22</span></li>
+						<li class="liti" onclick="butcklick(23)"><span>23</span></li>
+						<li class="liti" onclick="butcklick(24)"><span>24</span></li>
+						<li class="liti" onclick="butcklick(25)"><span>25</span></li>
+						<li class="liti" onclick="butcklick(26)"><span>26</span></li>
+						<li class="liti" onclick="butcklick(27)"><span>27</span></li>
+
+					</ul>
+				</div>
+				<ul>
+					<li id="litidn"><span id="tidn">&#8595</span></li>
+				</ul>
+			</div>
+			<div class="col-xl-11 col-sm-1" id="taskfield">
+				<div class="task-content row">
+					<div class="slide col-9" style="display:block">
+						<p>1. Обозначения для логических связок (операций):</p>
+						<p>a) отрицание (инверсия, логическое НЕ) обозначается ¬ (например, ¬А);</p>
+						<p>b) конъюнкция (логическое умножение, логическое И) обозначается /\ (например, А /\ В) либо &
+							(например, А
+							& В);</p>
+						<p>c) дизъюнкция (логическое сложение, логическое ИЛИ) обозначается \/ (например, А \/ В) либо |
+							(например,
+							А | В);</p>
+						<p>d) следование (импликация) обозначается → (например, А → В);</p>
+						<p>e) тождество обозначается ≡ (например, A ≡ B); выражение A ≡ B истинно тогда и только тогда,
+							когда значения A и B совпадают (либо они оба истинны, либо они оба ложны);</p>
+						<p>f) символ 1 используется для обозначения истины (истинного высказывания); символ 0 – для
+							обозначения лжи (ложного высказывания).</p>
+						<p>2. Два логических выражения, содержащие переменные, называются равносильными
+							(эквивалентными), если
+							значения этих выражений совпадают при любых значениях переменных. Так, выражения А → В и
+							(¬А) \/ В
+							равносильны, а А \/ В и А /\ В неравносильны (значения выражений разные, например, при А =
+							1, В = 0).</p>
+						<p>3. Приоритеты логических операций: инверсия (отрицание), конъюнкция (логическое умножение),
+							дизъюнкция
+							(логическое сложение), импликация (следование), тождество. Таким образом, ¬А /\ В \/ С /\ D
+							означает то же, что и ((¬А) /\ В) \/ (С /\ D).
+						</p>
+						<p>Возможна запись А /\ В /\ С вместо (А /\ В) /\ С. То же относится и к дизъюнкции: возможна
+							запись А \/ В \/ С вместо (А \/ В) \/ С.</p>
+						<p>4. Обозначения Мбайт и Кбайт используются в традиционном для информатики смысле – как
+							обозначения единиц
+							измерения, соотношение которых с единицей «байт» выражается степенью двойки.</p>
+					</div>
+					<div class="ansmany col-3">
+						<form style="display:block" id="fm27" class="fm">
+
+							<table width=50>
+								<tr>
+									<td><input type="text" name="ans1"></td>
+									<td><input type="text" name="ans2"></td>
+								</tr>
+							</table>
+							<input type="hidden" name="q_num" value="27">
+							<span class="sub">Отправить</span>
+					</div>
+				</div>
+				<div class="row">
+					<div class="file col-9">
+						<ul>
+							<li><a href=# download>Скачать файл</a></li>
+						</ul>
+					</div>
+					<div class="ansone col-3">
+						<form style="display:block" id="fm0" class="fm">
+							<input type="text" name="ans1">
+							<input type="hidden" name="q_num" value="0">
+							<span class="sub">Отправить</span>
+						</form>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</main>
+	<footer class="container-fluid fixed-bottom">
+		<div class="row">
+			<div class="col-4 col-sm-12">
+				<p class="footer">&#169 2021-2022 Трунов Денис Николаевич</p>
+			</div>
+			<div class="col-8 col-sm-12">
+
+			</div>
+		</div>
+	</footer>
+
+</body>
+
+</html>

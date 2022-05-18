@@ -82,10 +82,19 @@ main {
 #taskfield {
     overflow-y: scroll;
 }
+
 .task-content {
-            margin: 10px 50px;
-            height: auto
-        }
+    margin: 10px 50px;
+    height: auto
+}
+
+.slide,
+.file,
+.ansmany,
+.ansone {
+    background-color: #FFF;
+}
+
 .slide p {
     font-size: 14pt;
     -ms-user-select: none;
@@ -94,12 +103,35 @@ main {
     user-select: none;
 }
 
+.file ul li {
+    list-style-type: none;
+}
+
+.file ul li a:link {
+    color: black;
+}
+
+input {
+    margin: 10px 0;
+}
+
+.sub {
+    background-color: navy;
+    color: #FFF;
+    padding: 4px 15px;
+    cursor: pointer;
+}
+
 footer {
     background-color: navy;
-    height: 100px;
+    height: 50px;
     width: 100%;
 }
 
+p.footer {
+    color: #FFF;
+    margin: 10px;
+}
 
 @media only screen and (min-width: 220px) and (max-width: 1000px) {
     .navbar-brand {
