@@ -137,8 +137,11 @@ p.footer {
     .navbar-brand {
         font-size: 12pt;
     }
-
+    #tasks ul li {
+        display: inline;
+    }
     footer {
         position: relative;
+        
     }
 }
