@@ -112,6 +112,7 @@ main {
 
 input {
     margin: 10px 0;
+    width: 100px;
 }
 
 .sub {
@@ -141,11 +142,11 @@ p.footer {
         height: auto;
         margin-bottom: 0;
     }
-    
+
     #tasks {
         height: 100px;
-        
-        
+
+
     }
 
     #tasks ul li {
@@ -157,9 +158,7 @@ p.footer {
         margin: 0;
         height: auto
     }
-    .liti {
-        
-    }
+
     #topliti {
         display: none;
     }
@@ -167,6 +166,46 @@ p.footer {
     #bottomliti {
         display: none;
     }
+
+    .slide p {
+        font-size: 6pt;
+    }
+
+    .fm input,
+    span {
+        font-size: 8pt;
+
+    }
+   
+    footer {
+        position: relative;
+        font-size: 8pt;
+        display: none;
+
+    }
+
+}
+
+@media only screen and (min-width: 1001px) and (max-width: 1200px) {
+    .navbar-brand {
+        font-size: 12pt;
+    }
+
+    .mn {
+        margin-bottom: 0;
+    }
+
+    #tasks {
+        height: 65vh;
+
+
+    }
+
+    .task-content {
+        margin: 0;
+        height: auto
+    }
+
 
     .slide p {
         font-size: 6pt;
