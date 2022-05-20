@@ -35,7 +35,6 @@ main {
 
 #tasks {
     overflow-y: scroll;
-    height: auto;
     height: 70vh;
 }
 
@@ -137,11 +136,51 @@ p.footer {
     .navbar-brand {
         font-size: 12pt;
     }
+
+    .mn {
+        height: auto;
+        margin-bottom: 0;
+    }
+    
+    #tasks {
+        height: 100px;
+        
+        
+    }
+
     #tasks ul li {
         display: inline;
+
     }
+
+    .task-content {
+        margin: 0;
+        height: auto
+    }
+    .liti {
+        
+    }
+    #topliti {
+        display: none;
+    }
+
+    #bottomliti {
+        display: none;
+    }
+
+    .slide p {
+        font-size: 6pt;
+    }
+
+    .fm input,
+    span {
+        font-size: 8pt;
+
+    }
+
     footer {
         position: relative;
-        
+        font-size: 8pt;
+
     }
 }
